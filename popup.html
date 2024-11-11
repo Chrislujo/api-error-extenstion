@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Errors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        min-width: 300px;
+        max-width: 100%;
+      }
+      .error {
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+      h2 {
+        color: #333;
+        margin-top: 0;
+      }
+      #myButton {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      #myButton:hover {
+        background-color: #c82333;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h2>Detected API Errors</h2>
+    <div id="errors"></div>
+    <button id="myButton">Clear Errors</button>
+    <div style="margin-top: 20px">
+      <button id="test404">Test 404 Error</button>
+      <button id="test500">Test 500 Error</button>
+    </div>
+  </body>
+</html>
